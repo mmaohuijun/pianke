@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阅读</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/slider.css"/>
+    <link rel="stylesheet" href="css/read.css"/>
+</head>
+<body>
+<header>
+
+</header>
+     <!--图片轮播-->
+    <!--<div id="carousel">-->
+        <!--<ul id="imgs">-->
+
+        <!--</ul>-->
+        <!--<ul id="indexs">-->
+
+        <!--</ul>-->
+    <!--</div>-->
+<div class="container">
+    <div id="slide" class="slide" class="index-slide" alt="star">
+        <!-- 轮播图片数量可自行增减 -->
+        <div class="img"><img src="images/1.png"/></div>
+        <div class="img"><img src="images/2.png"/></div>
+        <div class="img"><img src="images/3.png"/></div>
+        <div class="img"><img src="images/4.png"/></div>
+        <div class="img"><img src="images/5.png"/></div>
+
+        <div class="slide-bt"></div>
+
+    </div>
+        <span class="prev" onclick="left()">
+            <img src="images/read/left-btn.png" alt=""/>
+        </span>
+        <span class="next" onclick="right()">
+            <img src="images/read/right-btn.png" alt=""/>
+        </span>
+</div>
+    <!--分类-->
+    <div class="Classif">
+        <h3>分类|Classification</h3>
+        <div class="img-container">
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/small01.jpg" alt=""/>
+                    <p></p>
+                    <span>早安故事</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/95306e1c2cea6c69c8a3d18bd3734bd820170113.jpg" alt=""/>
+                    <p></p>
+                    <span>晚安故事</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/f0ee4db57ae8d1e26b7bbbacd3ad0f1b.jpg" alt=""/>
+                    <p></p>
+                    <span>生活范</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/e2fe4150cd894b4bead7fb237f30fa2c20170110.jpg" alt=""/>
+                    <p></p>
+                    <span>奇妙物语</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/bfc198dd1b13b9fdbb782f296018307820170111.jpg" alt=""/>
+                    <p></p>
+                    <span>浮世绘</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/1ce5f4769efcd95fb167f01825c4550120170111.jpg" alt=""/>
+                    <p></p>
+                    <span>读心术</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/cfd56242864499a8a51bd9c164d01ccf.jpg" alt=""/>
+                    <p></p>
+                    <span>破万卷</span>
+                </a>
+            </div>
+            <div class="img-box">
+                <a href="">
+                    <img src="images/read/6d9e964bf2d0af703b1905053e32feb820170112.jpg" alt=""/>
+                    <p></p>
+                    <span>审片室</span>
+                </a>
+            </div><div class="img-box">
+            <a href="">
+                <img src="images/read/91faae658adab96b015d0710b18be60c.jpg" alt=""/>
+                <p></p>
+                <span>诗</span>
+            </a>
+        </div><div class="img-box">
+            <a href="">
+                <img src="images/read/093354ab7590577aa7ebd579263a91d8.jpg" alt=""/>
+                <p></p>
+                <span>片刻Talk</span>
+            </a>
+        </div>
+
+
+        </div>
+    </div>
+    <!--热门文章-->
+    <div id="read">
+        <h3>热门文章|Hot Articles</h3>
+
+
+    </div>
+    <!--几张图片-->
+    <div class="big_pic">
+        <a href="">
+            <img src="images/read/24hours.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="big_pic">
+        <a href="">
+            <img src="images/read/topic.jpg" alt=""/>
+        </a>
+    </div>
+    <div class="big_pic">
+        <a href="">
+            <img src="images/read/wordcard.jpg" alt=""/>
+        </a>
+    </div>
+    <!--页面脚部-->
+    <footer>
+    </footer>
+    <div class="modal"></div>
+    <div id="to_top">
+        <img src="images/back-top.png" alt=""/>
+        <p></p>
+    </div>
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/common.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/read.js"></script>
+<script>
+    var id = sessionStorage['uid'];
+</script>
+</body>
+</html>

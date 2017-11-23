@@ -1,0 +1,156 @@
+#carousel {
+  width: 960px;
+  height: 400px;
+  margin: 125px auto;
+  position: relative;
+  overflow: hidden;
+}
+#carousel ul#imgs {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#carousel #imgs li {
+  float: left;
+}
+#carousel #indexs {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+}
+#carousel #indexs li {
+  float: left;
+  background-color: #ccc;
+  color: #333;
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#carousel #indexs li.active {
+  background-color: #e4393c;
+  color: #fff;
+}
+.Classif {
+  width: 960px;
+  min-height: 100px;
+  margin: 70px auto;
+}
+.Classif h3:before {
+  content: "";
+  border-left: 15px solid #333;
+  background-color: #333333;
+}
+.Classif h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.Classif .img-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.Classif .img-container .img-box {
+  position: relative;
+  width: 191px;
+  height: 84px;
+  overflow: hidden;
+}
+.Classif .img-container .img-box img {
+  width: 100%;
+}
+.Classif .img-container .img-box a:hover img {
+  transform: scale(1.1);
+  transition: all .5s linear;
+}
+.Classif .img-container .img-box p {
+  display: inline-block;
+  width: 191px;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+}
+.Classif .img-container .img-box span {
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 5;
+}
+#read {
+  margin: 40px auto;
+  width: 962px;
+}
+#read h3:before {
+  content: "";
+  border-left: 15px solid #333;
+  background-color: #333333;
+}
+#read h3 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+#read div.read-item {
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  box-sizing: border-box;
+  height: 222px;
+  padding: 20px;
+}
+#read div.read-item > div {
+  padding: 0;
+  box-sizing: border-box;
+  width: 930px;
+
+}
+#read div.read-item > div > a {
+font-size: 12px;
+}
+#read div.read-item > div a {
+font-weight: normal;
+color: #333;
+}
+#read div.read-item > div a:hover{
+  color:#57AD68;
+}
+#read div.read-item > div>div.content {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  height: 115px;
+  line-height: 25px;
+}
+#read div.read-item > div>div a {
+color: #63B373;
+}
+#read div.read-item > div>div i {
+display: inline-block;
+width: 0;
+height: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 5px solid #63B373;
+margin-left: 2px;
+}
+#read div.read-item > div small {
+color: #ccc;
+font-size: 12px;
+}
+/*º∏’≈¥ÛÕº∆¨*/
+div.big_pic{
+  margin:100px auto;
+  overflow:hidden;
+  width:960px;
+  height:210px;
+}
+div.big_pic img:hover{
+  transform:scale(1.1);
+  transition:all .5s linear;
+}

@@ -1,0 +1,169 @@
+/* ::::: https://qnstatic.pianke.me/public/assets/css/client.css ::::: */
+
+/* ::::: https://qnstatic.pianke.me/public/assets/css/common.css ::::: */
+
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, li, pre, fieldset, legend, button, input, textarea, form, th, td { margin: 0px; padding: 0px; font-family: "PingFang SC","微软雅黑"; color: rgb(51, 51, 51); }
+html, body { width: 100%; height: 100%; background-color: rgb(250, 250, 250); background-image: url('bgimg.png'); background-repeat: repeat-x; }
+ul, ol { list-style: outside none none; margin: 0px; padding: 0px; }
+a { cursor: pointer; text-decoration: none; }
+input[placeholder] { padding-left: 12px; padding-right: 12px; font-size: 14px; font-weight: 100; color: rgb(204, 204, 204); }
+input::-moz-placeholder { font-weight: 100; color: rgb(204, 204, 204); }
+textarea::-moz-placeholder { font-weight: 100; color: rgb(204, 204, 204); }
+.container { margin: 0px auto; min-height: calc(100% - 210px); padding-top: 90px; }
+.hidden { display: none !important; }
+header { position: fixed; z-index: 1000; width: 100%; min-width: 1200px; background-color: rgba(255, 255, 255, 0.95); height: 90px; box-shadow: 0px 1px 4px 0px rgb(236, 236, 236); }
+header .head { line-height: 90px; width: 1200px; margin: 0px auto; }
+header .head .head-logo { position: relative; background-color: rgb(255, 255, 255); background-image: url('head-logo.png'); width: 80px; height: 90px; background-size: contain; background-position: center center; background-repeat: no-repeat; }
+header .head .head-logo a { position: absolute; width: 100%; height: 100%; }
+header .head .navbar-icon { display: inline-block; float: right; }
+header .head .navbar-icon div { display: inline-block; }
+header .head .navbar-icon .massage { position: relative; cursor: pointer; margin-right: 10px; width: 61px; }
+header .head .navbar-icon .massage .msgnum { width: 21px; line-height: 21px; color: rgb(255, 255, 255); margin-left: -15px; font-size: 12px; background-color: rgb(232, 111, 111); text-align: center; vertical-align: sub; border-radius: 50%; border: 2px solid rgb(255, 255, 255); box-shadow: 0px -1px 3px 0px rgba(224, 106, 106, 0.8) inset, 0px 1px 3px 0px rgba(255, 72, 72, 0.5) inset; }
+header .head .navbar-icon .editer { cursor: pointer; margin-right: 25px; width: 44px; height: 44px; border: 1px solid rgb(87, 173, 104); border-radius: 50%; vertical-align: middle; box-sizing: border-box; }
+header .head .navbar-icon .editer div { position: absolute; width: 38px; height: 38px; margin-top: 1.5px; margin-left: 2px; background: rgba(0, 0, 0, 0) -moz-linear-gradient(left center , rgba(101, 181, 117, 0.9), rgb(85, 182, 104)) repeat scroll 0% 0%; border-radius: 50%; }
+header .head .navbar-icon .editer div:hover { box-shadow: 0px -2px 3px 0px rgba(255, 255, 255, 0.5) inset, 0px 2px 3px 0px rgba(255, 255, 255, 0.8) inset; }
+header .head .navbar-icon .editer div:active { background: rgb(87, 173, 104) none repeat scroll 0% 0%; }
+header .head .navbar-icon .editer img { position: absolute; top: 50%; left: 50%; margin-left: -9.5px; margin-top: -10px; }
+header .head img { vertical-align: middle; }
+.navbar { margin-top: -90px; margin-left: 172px; }
+.navbar li { text-align: center; float: left; font-size: 16px; }
+.navbar li:hover { background-color: rgb(251, 251, 251); transition: background-color 0.5s ease 0s; }
+.navbar li:active, .navbar .active { background-color: rgb(251, 251, 251); font-weight: bolder; box-shadow: 0px -3px 0px 0px rgb(51, 51, 51) inset; }
+.navbar li a { padding: 26px; color: rgb(51, 51, 51); }
+.navbar-icon .massage:hover .msg-drop { display: block !important; }
+.msg-menu { top: 90px; left: 0px; position: absolute; }
+.msg-menu ul { width: 100%; }
+.msg-menu ul li a { color: rgb(51, 51, 51); }
+.msg-menu ul li a span { color: rgb(232, 111, 111); float: right; }
+.msg-menu ul li a:hover { color: rgb(87, 173, 104); }
+.massage .msg-menu ul li:nth-child(1) { border-bottom: 1px solid rgb(232, 232, 232); }
+.massage .msg-menu ul li:nth-child(2) { border-bottom: 1px solid rgb(232, 232, 232); }
+.massage .msg-menu ul li:nth-child(3) { border-bottom: 1px solid rgb(232, 232, 232); }
+.drop-menu { display: none !important; margin-left: -25px; margin-top: -5px; width: 100px; line-height: 36px; font-size: 12px; background-color: rgb(255, 255, 255); border: 1px solid rgb(232, 232, 232); border-radius: 10px; box-sizing: border-box; padding: 5px 16px; }
+.drop-menu::before { top: 0px; left: 0px; margin-left: 17px; margin-top: -11px; content: " "; background-color: rgb(255, 255, 255); position: absolute; border-width: 1px; border-style: solid; border-color: rgb(232, 232, 232) transparent transparent rgb(232, 232, 232); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; width: 12px; height: 12px; transform: rotate(45deg); }
+.navbar-icon .userinfo { position: relative; }
+.navbar-icon .userinfo .user-icon { height: 42px; width: 42px; border-radius: 50%; border: 1px solid rgb(232, 232, 232); }
+.navbar-icon .userinfo:hover .userinfo-drop { display: block !important; }
+.userinfo .msg-menu ul li:nth-child(1) { border-bottom: 1px solid rgb(232, 232, 232); }
+.userinfo .msg-menu ul li:nth-child(3) a:hover { color: rgb(232, 111, 111); }
+.login-btn { font-weight: 200; font-size: 14px; line-height: 44px; width: 126px; box-sizing: border-box; text-align: center; border: 1px solid rgba(120, 188, 133, 0.5); border-radius: 25px; color: rgb(87, 173, 104); cursor: pointer; }
+.login-btn:hover { border: medium none; color: rgb(255, 255, 255); background-color: rgb(87, 173, 104); transition: all 300ms linear 0s; }
+.login-btn:active { border: medium none; color: rgb(255, 255, 255); background-color: rgb(87, 173, 104); transition: all 300ms linear 0s; }
+.login-btn span { opacity: 0.5; }
+footer { clear: both; height: 118px; min-width: 1200px; width: 100%; background-color: rgb(26, 24, 24); color: rgb(102, 102, 102); font-size: 12px; }
+footer .foot { width: 1200px; height: 100%; margin: 0px auto; }
+footer .foot .foot-logo { background-image: url('foot-logo.png'); width: 100px; height: 118px; background-size: contain; background-position: center center; background-repeat: no-repeat; }
+footer .foot .foot-link { line-height: 25px; padding-left: 120px; margin-top: -80px; }
+footer .foot .foot-link a { color: rgb(102, 102, 102); padding-right: 10px; }
+footer .foot .foot-icon { margin-top: -44px; float: right; }
+footer .foot .foot-icon a { position: absolute; width: 100%; height: 100%; }
+footer .foot .foot-icon div { position: relative; display: inline-block; background-size: contain; background-position: center center; background-repeat: no-repeat; }
+footer .foot .foot-icon div:nth-child(1) { width: 44px; height: 44px; margin-right: 18px; }
+footer .foot .foot-icon div:nth-child(2) { width: 44px; height: 44px; margin-right: 18px; }
+footer .foot .foot-icon div:nth-child(3) { width: 44px; height: 44px; margin-right: 18px; }
+footer .foot .foot-icon div:nth-child(4) { width: 44px; height: 44px; margin-right: 18px; }
+footer .foot .foot-icon .foot-app { background-image: url('foot-app.png'); }
+footer .foot .foot-icon .foot-app:hover { background-image: url('foot-apph.png'); }
+footer .foot .foot-icon .foot-weibo { background-image: url('foot-sina.png'); }
+footer .foot .foot-icon .foot-weibo:hover { background-image: url('foot-sinah.png'); }
+footer .foot .foot-icon .foot-wechat { background-image: url('foot-wechat.png'); }
+footer .foot .foot-icon .foot-wechat:hover { background-image: url('foot-wechath.png'); }
+footer .foot .foot-icon .foot-wechat:hover div { display: block; }
+footer .foot .foot-icon .foot-wechat div { display: none; width: 200px; height: 200px; position: absolute; background-color: rgb(255, 255, 255); left: 0px; bottom: 70px; margin-left: -78px; background-image: url('pianke-code_001.png'); background-size: 180px auto; box-shadow: 0px -1px 10px 0px rgb(204, 204, 204); }
+footer .foot .foot-icon .foot-wechat div::before { content: ""; position: absolute; width: 15px; height: 15px; bottom: 0px; left: 90px; margin-bottom: -9px; background-color: rgb(255, 255, 255); border: 1px solid transparent; transform: rotate(45deg); }
+footer .foot .foot-icon .foot-safe { margin-left: 31px; width: 86px !important; background-image: url('foot-safe.png'); }
+.type-title-cpt { clear: both; padding-bottom: 34px; padding-top: 40px; color: rgb(153, 153, 153); font-size: 16px; }
+.type-title-cpt span:first-child { margin-right: 30px; }
+.type-title-cpt span { cursor: pointer; position: relative; }
+.type-title-cpt span:hover, .type-title-cpt span:active { color: rgb(51, 51, 51); padding-bottom: 10px; }
+.type-title-cpt span:hover::before, .type-title-cpt span:active::before { content: ""; position: absolute; height: 2px; width: 100%; background-color: rgb(51, 51, 51); bottom: 0px; left: 0px; }
+.type-title-cpt .active { color: rgb(51, 51, 51); }
+.type-title-cpt .active::before { content: ""; position: absolute; width: 100%; height: 2px; background-color: rgb(51, 51, 51); top: 30px; left: 0px; }
+.article-cpt .article-info .article-info-box .article-content::before { content: ""; margin-top: -10px; position: absolute; width: 30px; height: 1px; border-top: 1px solid rgb(51, 51, 51); }
+.article-img-cpt .article-img-others span:nth-child(2) { float: right; }
+.user-cpt .user-info .user-cpt-left img:nth-child(2) { width: 52px; }
+.user-cpt .user-info .user-cpt-right .user-des::before { content: ""; position: absolute; width: 15px; height: 1px; top: 0px; border-top: 1px solid rgb(102, 102, 102); }
+.radio-cpt .radio-img:hover span:not(.radio-img-bg) { opacity: 1; transition: opacity 300ms linear 0s; }
+.radio-cpt .radio-img span:not(.radio-img-bg) { position: absolute; top: 0px; left: 0px; color: rgb(255, 255, 255); font-size: 16px; margin-top: 136px; width: 170px; height: 51px; margin-left: 65px; font-weight: 100; opacity: 0; text-align: center; }
+.radio-cpt .radio-img img:nth-child(3) { width: 100%; height: 100%; transform: rotate(0deg); margin-top: -307px; box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.2); }
+.radio-cpt .radio-img img:nth-child(2) { width: 90%; height: 90%; transform: rotate(90deg); margin-left: 15px; margin-top: -277px; box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.1); }
+.radio-cpt .radio-img img:nth-child(1) { transform: rotate(270deg); width: 80%; height: 80%; margin-left: 30px; margin-top: 70px; box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2); }
+.article-list-group > div:nth-child(4) { margin-bottom: 0px; }
+.article-img-list-group > div:nth-child(3) { margin-left: 10px; }
+.topic-list-group .topic-list > div:not(.title-cpt) { margin-bottom: 128px; }
+.back-top { cursor: pointer; width: 52px; height: 52px; border-radius: 50%; position: fixed; bottom: 170px; right: 50px; background-image: url('back-top.png'); background-size: cover; opacity: 0.1; }
+.back-top:hover { background-image: url('back-toph.png'); opacity: 0.8; }
+.share-cpt { cursor: pointer; margin-top: -32px; float: right; }
+.share-cpt > div { display: inline-block; background-size: contain; background-position: center center; background-repeat: no-repeat; width: 44px; height: 44px; margin-left: 10px; }
+.share-cpt .share-sina { background-image: url('foot-sinah.png'); }
+.share-cpt .share-sina:hover { background-image: url('share-sina.png'); }
+.share-cpt .share-wechat { position: relative; background-image: url('foot-wechath.png'); }
+.share-cpt .share-wechat:hover { background-image: url('share-wechat.png'); }
+.share-cpt .share-wechat .code::before { content: ""; position: absolute; width: 15px; height: 15px; right: 100px; bottom: 0px; margin-bottom: -10px; border-width: 1px; border-style: solid; border-color: transparent rgb(232, 232, 232) rgb(232, 232, 232) transparent; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background-color: rgb(255, 255, 255); transform: rotate(45deg); }
+.share-cpt .share-qq { background-image: url('qq.png'); }
+.share-cpt .share-qq:hover { background-image: url('share-qq.png'); }
+.share-cpt .share-dou { background-image: url('dou.png'); }
+.share-cpt .share-dou:hover { background-image: url('share-dou.png'); }
+.is-login-cpt .is-login div::before { content: ""; position: absolute; width: 15px; height: 15px; border-width: 1px; border-style: solid; border-color: rgb(232, 232, 232) rgb(232, 232, 232) transparent transparent; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background-color: rgb(255, 255, 255); transform: rotate(45deg); top: 50%; left: 0px; margin-top: -7.5px; margin-left: -33px; }
+.is-login-cpt .has-value div::before { border-top-color: rgb(120, 188, 133); border-right-color: rgb(120, 188, 133); }
+.comment-cpt .has-value::before { border-top-color: rgb(120, 188, 133) !important; border-left-color: rgb(120, 188, 133) !important; }
+.comment-cpt .com-textarea::before { content: ""; position: absolute; width: 15px; height: 15px; right: 15px; margin-top: -7px; border-width: 1px; border-style: solid; border-color: rgb(232, 232, 232) transparent transparent rgb(232, 232, 232); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background-color: rgb(255, 255, 255); transform: rotate(45deg); }
+.comment-cpt .comment-info .comment-user-info span:not(.comment-user-name) { float: right; }
+.comment-cpt .comment-info .comment-user-info .comment-number::before { content: ""; position: absolute; width: 1px; height: 17px; background-color: rgb(232, 232, 232); right: 0px; margin-right: -19px; top: 0px; }
+.img-group-cpt .view-all a::before { display: none; }
+.img-group-cpt > div .card-item .card-others span:not(.card-type) { color: rgb(204, 204, 204); float: right; }
+.card-read-cpt .card-read-title::before { content: ""; bottom: 0px; position: absolute; width: 43px; height: 1px; border-top: 1px solid rgb(51, 51, 51); }
+.login-input { width: 270px; margin: 0px auto; padding-top: 25px; }
+.login-input input { box-sizing: border-box; width: 270px; height: 33px; outline: medium none; font-weight: 300; font-size: 16px; border-width: 1px; border-style: solid; border-color: transparent transparent rgb(232, 232, 232); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; color: rgb(51, 51, 51); }
+.login-warn { position: absolute; width: 100%; font-size: 12px; text-align: center; color: rgb(232, 111, 111); }
+.login { overflow: scroll; width: 100%; position: fixed; z-index: 1001; height: 100%; background-color: rgba(255, 255, 255, 0.9); }
+.login .close-login-box { cursor: pointer; background-image: url('close-login.png'); background-size: 20px auto; height: 20px; background-position: right top; background-repeat: no-repeat; margin-right: 25px; margin-top: 25px; }
+.login .login-box { position: absolute; font-weight: 300; width: 500px; top: 50%; margin-top: -345px; left: 50%; margin-left: -250px; height: 690px; background-repeat: no-repeat; background-image: url('login-bg.png'); background-size: cover; }
+.login .login-box .pianke-text { text-align: center; padding-top: 146px; color: rgb(35, 25, 22); font-weight: 200; font-size: 16px; }
+.login .login-box .login-btn { width: 172px; font-size: 16px; }
+.login .login-box .register-content { margin: 10px auto 37px; background-position: center center; width: 134px; height: 212px; background-image: url('wechat-bg.png'); background-size: 134px auto; background-repeat: no-repeat; }
+.login .login-box .register-content img { width: 92px; height: 92px; margin-top: 70px; margin-left: 21px; }
+.login .login-box .type-title-cpt { padding-top: 73px; padding-bottom: 27px; text-align: center; }
+.login .login-box .type-title-cpt span:first-child { margin-right: 70px; }
+.login .login-box .forget-psw { width: 270px; margin: 0px auto; font-size: 12px; text-align: right; padding-top: 10px; }
+.login .login-box .forget-psw a { color: rgb(204, 204, 204); }
+.login .login-box .forget-psw a:hover { color: rgb(87, 173, 104); }
+.login .login-box .login-btn { margin: 38px auto 33px; }
+.login .login-box .login-others-way { margin: 0px auto; padding-top: 16px; width: 400px; border-top: 1px solid rgb(242, 242, 242); color: rgb(204, 204, 204); font-size: 12px; text-align: center; }
+.login .login-box .login-others-way .share-cpt { float: none; margin-top: 23px; }
+.likeNav-cpt > div .ting-share .share-menu-item::before { left: 0px; border-color: transparent rgb(232, 232, 232) rgb(232, 232, 232) transparent; margin-left: 222px; margin-top: 74px; }
+.Confirm .btn-group > div:nth-child(2) { border-bottom-right-radius: 6px; color: rgb(87, 173, 104); }
+.container { width: 100%; margin: 0px auto; }
+.top-container { height: 410px; width: 100%; background-image: url('client-bg.png'); background-size: cover; background-repeat: no-repeat; }
+.top-container .top-content { width: 1030px; margin: 0px auto; color: rgb(49, 52, 61); font-size: 50px; font-weight: bold; padding-top: 100px; }
+.top-container .top-content .top-des { color: rgb(49, 52, 61); font-size: 14px; font-weight: 400; opacity: 0.45; }
+.top-btn { position: relative; text-align: left; float: left; margin-top: 22px; cursor: pointer; color: rgb(255, 255, 255); font-size: 15px; background-color: rgb(88, 195, 109); width: 144px; line-height: 46px; border-radius: 25px; font-weight: 200; opacity: 0.9; box-shadow: 0px -1px 9px 0px rgb(138, 223, 155) inset; background-repeat: no-repeat; background-position: 28px 9px; box-sizing: border-box; }
+.top-btn a { color: rgb(255, 255, 255); position: absolute; width: 100%; height: 100%; left: 0px; }
+.top-btn:hover { opacity: 0.8; }
+.ios-btn { margin-right: 14px; background-size: 20px auto; background-image: url('client-ios.png'); padding-left: 58px; }
+.android-btn { margin-right: 16px; background-position: 16px 10px; background-size: 20.84px auto; background-image: url('client-andorid.png'); padding-left: 42px; }
+.client-code { cursor: pointer; position: relative; margin-top: 22px; width: 47px; height: 46px; float: left; background-image: url('client-code.png'); background-size: 47px auto; background-repeat: no-repeat; }
+.client-code:hover div { display: block; }
+.client-code div { display: none; position: absolute; width: 137px; height: 137px; background-image: url('client-codeh.png'); background-size: 137px auto; background-repeat: no-repeat; bottom: 0px; left: 54px; }
+.introduce-container { padding-top: 86px; }
+.introduce-container .title-one { width: 386px; margin: 0px auto; }
+.introduce-container .client-title { background-image: url('clitent-title-bg.png'); background-size: 87px auto; background-repeat: no-repeat; background-position: left top; padding-left: 55px; padding-top: 17px; color: rgb(51, 51, 51); position: relative; }
+.introduce-container .client-title .title { font-size: 80px; }
+.introduce-container .client-title .title span { left: 154px; top: 65px; position: absolute; font-size: 30px; font-weight: bold; }
+.introduce-container .client-title .des { line-height: 24px; position: absolute; left: 154px; top: 120px; font-size: 16px; color: rgb(155, 155, 155); font-weight: lighter; }
+.introduce-container .client-one { margin-top: 20px; padding-top: 100px; text-align: center; height: 672px; background-repeat: no-repeat; background-position: center center; background-image: url('client-one-bg.png'); }
+.introduce-container .client-two { margin-top: 132px; background-repeat: no-repeat; background-position: 0px center; background-image: url('client-two-bg.png'); }
+.introduce-container .client-two div { width: 841px; margin: 0px auto; }
+.introduce-container .client-two div .title-two { margin-top: 245px; margin-left: 65px; width: 340px; float: right; }
+.introduce-container .client-three { margin-top: 132px; background-repeat: no-repeat; background-position: center center; background-image: url('client-three-bg.png'); }
+.introduce-container .client-three div { width: 841px; margin: 0px auto; }
+.introduce-container .client-three div .title-three { margin-right: 55px; margin-top: 245px; width: 367px; float: left; }
+.introduce-container .client-four { margin-top: 132px; background-repeat: no-repeat; background-position: 0px center; background-image: url('client-two-bg.png'); }
+.introduce-container .client-four div { width: 841px; margin: 0px auto; }
+.introduce-container .client-four div .title-four { margin-top: 245px; margin-left: 45px; width: 340px; float: right; }
+.introduce-container .client-four .title-des { color: rgb(51, 51, 51); left: 154px; top: 65px; font-size: 30px; font-weight: bold; }
+.introduce-container .client-four .des { padding-top: 15px; position: initial; }
+.introduce-container .client-bottom { background-image: url('client-bottom-bg.png'); background-repeat: no-repeat; background-position: center top; line-height: 29px; width: 406px; height: 300px; margin: 120px auto 0px; color: rgb(51, 51, 51); font-size: 14px; font-weight: 200; text-align: center; padding-top: 138px; }
+.introduce-container .client-bottom .top-btn { margin-top: 33px; margin-right: 15px; }
+.introduce-container .client-bottom .ios-btn { margin-left: 20px; }
+.introduce-container .client-bottom .client-code { margin-top: 33px; }

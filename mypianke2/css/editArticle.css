@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    color:#333;
+}
+#container{
+    width:100%;
+    height:800px;
+    /*使用js修改高度*/
+    display:flex;
+}
+.nav-bar{
+    width:60px;
+    height:100%;
+    border:1px solid #ddd;
+}
+.content{
+    flex-grow: 1;
+    display:flex;
+    justify-content:space-around;
+    background-color:#5BAD6B;
+}
+.content>.test{
+    /*text-align:center;*/
+    width: 800px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    background-color:#fff;
+}
+/*立即发布按钮*/
+div.test>div:first-child{
+    height:50px;
+}
+div.test span{
+    float:right;
+    background:#5BAD6B;
+    width:90px;
+    height:39px;
+    text-align:center;
+    font-size:15px;
+    color:#fff;
+    line-height:35px;
+    margin:15px 15px 0 0;
+
+}
+div.test span:hover{
+    cursor:pointer;
+    background:#66C378;
+}
+/*文章标题*/
+div.test>div:nth-child(2){
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top: 45px;
+}
+div.test>div:nth-child(2)>input{
+    width:615px;
+    height:45px;
+    outline: none;
+    border:none;
+}
+div.test>div:nth-child(2)>input[value]{
+    font-size:32px;
+}

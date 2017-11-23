@@ -1,0 +1,77 @@
+#container{
+  width:1200px;
+  margin:0 auto;
+  border:1px solid #ccc;
+}
+#msg-box{
+  min-height:200px;
+  border:1px solid #ccc;
+}
+#hot-tags{
+  min-height:200px;
+  border:1px solid #ccc;
+}
+#pieces{
+  position:relative;
+  background-color:#fff;
+  .card{
+    position:absolute;
+    width:290px;
+    min-height:30px;
+    border:1px solid #ddd;
+  }
+  //上面图片样式
+  .card-top-img{
+    width:290px;
+  }
+  .card-top-img a{
+    display:inline-block;
+    width:100%;
+  }
+  .card-top-img img{
+    width:100%;
+  }
+  //下面文字样式
+  .card-item{
+    padding:15px ;
+  }
+  .card-item>div:first-child{
+    margin-bottom:10px;
+  }
+  .card-item>div:first-child>a{
+    font-size:14px;
+    color:#333;
+    font-weight:200;
+    text-decoration:none;
+  }
+  .card-item>div:last-child img{
+    border-radius:50%;
+    width:32px;
+    height:32px;
+  }
+  .card-item>div:last-child>a{
+    font-size:12px;
+    text-decoration:none;
+    color:#333;
+  }
+  .card-item>div:last-child>a:hover{
+    color:#6CB276;
+  }
+
+  div.card:first-child{
+    top:0;
+    left:0;
+  }
+  div.card:nth-child(2){
+    top:0;
+    left:303px;
+  }
+  div.card:nth-child(3){
+    top:0;
+    left:606px;
+  }
+  div.card:nth-child(4){
+    top:0;
+    left:909px;
+  }
+}
